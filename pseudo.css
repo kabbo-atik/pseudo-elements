@@ -1,0 +1,192 @@
+/* Universal Code Start */
+*{
+    margin: 0;
+    box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+/* Group 1 Start */
+.group-1{
+    background-color: lightblue;
+    border-radius:100px ;
+    margin:50px 50px ;
+}
+.group-1 p{
+    padding:30px 50px ;
+}
+
+.group-1 p::after{
+ content:"- Congratulations" ;
+ color:rgb(234, 19, 19) ;
+}
+.group-1 p::before{
+    content: "Read This -";
+    color: rgb(244, 16, 16);
+}
+.group-1 p::first-letter{
+    color: rgb(74, 24, 239);
+    font-size: 20px;
+}
+.group-1 p::first-line{
+    background-color: cyan;
+}
+.group-1 p::selection{
+color: white;
+background-color: black;
+}
+/* Group 1 End */
+
+/* Group-2 Start */
+.group-2{
+    background-color: rgb(166, 225, 245);
+    border-radius:100px ;
+    margin:50px 50px ;
+}
+.group-2 p{
+    padding:30px 50px ;
+}
+
+.group-2 p:empty{
+   background-color: rgb(248, 253, 243); 
+   width: 100px;
+   height: 30px;
+   padding: 20px;
+   margin-left: 100px;
+   border-radius: 20px;
+}
+.group-2 p:first-child{
+    background-color: antiquewhite;
+    border-radius:10px;
+}
+.group-2 p:last-child{
+    color: blue;
+}
+/* .group-2 p:last-of-type{
+    color: red;
+}
+.group-2 p:first-of-type{
+    background-color: rgb(233, 199, 199);
+} */
+.group-2 p:nth-child(3){
+   background-color: red;
+   border-radius: 250px;
+   margin-top: 20px;
+}
+.group-2 :not(p){
+    background-color: darkorange;
+    text-align: center; 
+    border-radius: 50px;
+    margin-top: 30px;
+    }
+/* Group 2 End */
+
+/* Group 3 Start */
+.group-3{
+    background-color: rgb(166, 225, 245);
+    border-radius:100px ;
+    margin:50px 50px ;
+    padding: 50px;
+}
+.group-3 ul{
+    margin-top: 25px;
+}
+
+.group-3 a:active{
+    background-color:yellow ;
+}
+.group-3 a:visited{
+    color: rgba(73, 9, 235, 0.899);
+}
+.group-3 a:link{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.group-3 li::marker{
+    color: red;
+}
+.group-3 li:hover{
+    background-color:white;
+}
+/* Group 3 End */
+
+/* Group 4 Start */
+.group-4{
+    background-color: rgb(166, 225, 245);
+    border-radius:100px ;
+    margin:50px 50px ;
+    padding: 50px;
+}
+.group-4 p{
+    margin-bottom: 20px;
+}
+
+.input-1:optional{
+    background-color: yellow;
+    border: 0px;
+    border-radius: 50px;
+    width: 70%;
+    height: 50px;
+}
+.input-2:required{
+    background-color:rgb(236, 236, 232);
+    border-radius: 5px;
+    border: 0px;
+    width: 70%;
+    height: 50px;
+}
+.input-3:read-only{
+    background-color: blueviolet;
+    color: aliceblue;
+    width: 70%;
+    height: 50px;
+}
+.input-4:in-range{
+    border: solid 3px;
+   border-radius: 10px;
+   background-color:rgb(36, 237, 36);
+   width: 10%;
+    height: 50px;
+}
+.input-4:out-of-range{
+   border: solid 3px;
+   border-radius: 10px;
+   background-color:yellow;
+   width: 10%;
+    height: 50px;
+}
+.input-5:valid{
+border:solid 3px green;
+width: 50%;
+height: 30px;
+}
+.input-5:invalid{
+    border: solid 3px red;
+    width: 70%;
+    height: 50px;
+ }
+/* Group 4 End */
+
+/* Group 5 Start */
+
+.group-5{
+    background-color: rgb(166, 225, 245);
+    border-radius:100px ;
+    margin:50px 50px ;
+    padding: 50px;
+}
+
+:target{
+    background-color: gray;
+    width: 80%;
+    border: solid 5px blue;
+}
+/* :root{
+    background-color: coral;
+} */
+
+/* Group 5 End */
+
+
+
